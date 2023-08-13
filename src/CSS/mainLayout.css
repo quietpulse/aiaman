@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 500;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+::selection {
+    background: rgb(140, 17, 241);
+    color: #fff;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #eed4ffb2;
+}
+
+#nav-left {
+    display: flex;
+    align-items: center;
+}
+
+#nav-left h1 {
+    font-weight: 700;
+}
+
+#nav-left ul a {
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+    transition: all 0.2s;
+    margin-right: 18px;
+}
+
+#nav-left ul a:hover {
+    color: rgb(109, 109, 109);
+}
+
+#nav-left img {
+    height: 42px;
+    border-radius: 100px;
+    width: auto;
+    transition: all 0.3s;
+}
+
+#nav-left img:hover {
+    filter: brightness(110%);
+    cursor: pointer;
+    box-shadow: 4px 3px 0px #000;
+}
+
+#nav-right svg {
+    display: flex;
+    fill: #fff;
+    height: 18px;
+    width: auto;
+}
+
+#nav-right button {
+    cursor: pointer;
+    border-radius: 100px;
+    padding: 7px 7px;
+    border: solid 3px #ae67ff;
+    background-color: #570a96;
+    margin: 0px 4px;
+    transition: all 0.3s;
+}
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+footer p {
+    margin: 20px 50px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+#my-link {
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s;
+    color: rgb(134, 31, 219);
+}
+
+#my-link:hover {
+    color: rgb(116, 116, 116);
+}
+
+footer svg {
+    height: 14px;
+    width: auto;
+}
+
+@media screen and (max-width: 800px) {
+    footer {
+        display: contents;
+        text-align: center;
+    }
+
+    footer p {
+        margin: 20px 40px;
+    }
+}

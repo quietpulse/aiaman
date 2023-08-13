@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<style>
+    nav {
+        padding: 10px 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #nav-left {
+        display: flex;
+        align-items: center;
+    }
+
+    #nav-left h1 {
+        font-weight: 700;
+    }
+
+    #nav-left ul a {
+        text-decoration: none;
+        color: black;
+        transition: all 0.3s;
+        margin-right: 10px;
+    }
+
+    #nav-left ul a:hover {
+        color: rgb(109, 109, 109);
+    }
+
+    #nav-left img {
+        height: 50px;
+        border-radius: 100px;
+        width: auto;
+        transition: all 0.6s;
+    }
+
+    #nav-left img:hover {
+        cursor: pointer;
+        box-shadow: 0px 0px 20px #000;
+    }
+</style>
+
+<body>
+    <nav>
+        <div id="nav-left">
+            <img src="../images/profile-min.png" alt="profile">
+            <ul>
+                <a href="#">Home</a>
+                <a href="#">Projects</a>
+                <a href="#">About</a>
+                <a href="#">Skills</a>
+                <a href="#">Contact</a>
+            </ul>
+        </div>
+        <div id="nav-right">
+            <button>N</button>
+            <button>S</button>
+        </div>
+    </nav>
+</body>
+
+</html>

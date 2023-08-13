@@ -1,0 +1,48 @@
+span {
+    color: blueviolet;
+}
+
+header {
+    height: 80vh;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+header p {
+    font-size: 16px;
+    width: 450px;
+    color: #424242;
+}
+
+header button {
+    cursor: pointer;
+    border-radius: 12px;
+    padding: 8px 18px;
+    background-color: #570a96;
+    color: #fff;
+    border: solid 3px #ae67ff;
+    transition: all 0.4s;
+}
+
+header button:last-child {
+    background-color: #fff;
+    color: #000;
+}
+
+header button:last-child:hover {
+    border: solid 3px #ae67ff;
+    background-color: #ae67ff;
+    color: #ffffff;
+}
+
+header button:first-child:hover {
+    background-color: #ae67ff;
+}
+
+#buttons {
+    margin-top: 50px;
+}
