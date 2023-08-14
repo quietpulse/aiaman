@@ -1,29 +1,33 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
 
 * {
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight: 500;
+    font-family: 'Ysabeau Infant', sans-serif;
 }
 
 body {
     margin: 0;
+    color: #fff;
+    background-color: #1e1c20;
     padding: 0;
 }
 
 ::selection {
-    background: rgb(140, 17, 241);
-    color: #fff;
+    background: rgba(147, 117, 255, 0.719);
+    color: #ffffff;
 }
 
 nav {
     position: sticky;
+    margin: 0;
     top: 0;
     left: 0;
     padding: 10px 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #eed4ffb2;
+    background-color: #1e1c20ce;
+    backdrop-filter: blur(10px);
+    z-index: 99;
 }
 
 #nav-left {
@@ -35,29 +39,17 @@ nav {
     font-weight: 700;
 }
 
-#nav-left ul a {
+#nav-middle ul a {
     font-size: 15px;
     text-decoration: none;
-    color: black;
+    color: #fff;
+    font-weight: 600;
     transition: all 0.2s;
     margin-right: 18px;
 }
 
-#nav-left ul a:hover {
-    color: rgb(109, 109, 109);
-}
-
-#nav-left img {
-    height: 42px;
-    border-radius: 100px;
-    width: auto;
-    transition: all 0.3s;
-}
-
-#nav-left img:hover {
-    filter: brightness(110%);
-    cursor: pointer;
-    box-shadow: 4px 3px 0px #000;
+#nav-middle ul a:hover {
+    color: rgb(194, 194, 194);
 }
 
 #nav-right svg {
@@ -71,12 +63,34 @@ nav {
     cursor: pointer;
     border-radius: 100px;
     padding: 7px 7px;
-    border: solid 3px #ae67ff;
-    background-color: #570a96;
+    border: solid 3px #cccccc;
+    background-color: #353535;
     margin: 0px 4px;
     transition: all 0.3s;
 }
 
+.eye {
+    position: relative;
+    display: inline-block;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    background: #fff;
+  }
+  .eye:after { /*pupil*/
+    position: absolute;
+    bottom: 17px;
+    right: 10px;
+    width: 10px;
+    height: 10px;
+    background: #131018;
+    border-radius: 50%;
+    content: " ";
+  }
+
+#nav-right button:hover {
+    border: solid 3px #353535;
+}
 
 footer {
     display: flex;
@@ -94,7 +108,7 @@ footer p {
     cursor: pointer;
     font-weight: 600;
     transition: all 0.3s;
-    color: rgb(134, 31, 219);
+    color: #ff5d5d;
 }
 
 #my-link:hover {
