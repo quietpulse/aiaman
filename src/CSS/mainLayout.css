@@ -39,7 +39,12 @@ nav {
     font-weight: 700;
 }
 
-#nav-middle ul a {
+#nav-middle ul {
+    list-style: none;
+    display: flex;
+}
+
+#nav-middle ul li a {
     font-size: 15px;
     text-decoration: none;
     color: #fff;
@@ -48,7 +53,7 @@ nav {
     margin-right: 18px;
 }
 
-#nav-middle ul a:hover {
+#nav-middle ul li a:hover {
     color: rgb(194, 194, 194);
 }
 
@@ -57,9 +62,6 @@ nav {
     fill: #fff;
     height: 18px;
     width: auto;
-}
-
-#nav-right button {
     cursor: pointer;
     border-radius: 100px;
     padding: 7px 7px;
@@ -90,7 +92,7 @@ nav {
     content: " ";
 }
 
-#nav-right button:hover {
+#nav-right svg:hover {
     border: solid 3px #353535;
 }
 
@@ -130,5 +132,9 @@ footer svg {
 
     footer p {
         margin: 20px 40px;
+    }
+
+    #nav-middle ul {
+        display: none;
     }
 }

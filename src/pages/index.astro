@@ -1,6 +1,7 @@
 ---
 import MainLayout from "../layout/mainLayout.astro";
 import peofilePhoto from "../images/profile-pic.png";
+import { Image, Picture } from '@astrojs/image/components';
 import "../CSS/index.css";
 ---
 
@@ -8,12 +9,13 @@ import "../CSS/index.css";
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="description" content="I'm Aiaman and i'm self-taught 14-year-old web developer with some impressive skills.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>aiaman</title>
   </head>
   <body>
     <MainLayout>
-      <header>
+      <header class="hidden">
         <div id="header-left">
           <div>
             <h1>
@@ -21,9 +23,8 @@ import "../CSS/index.css";
             </h1>
             <p>
               I'm a self-taught 14-year-old web developer with some <span
-                class="white">impressive</span
-              > skills. But still, I <span class="white">acknowledge</span> that
-              I have much more to learn.
+              class="white">impressive</span
+              > skills.
             </p>
           </div>
           <div id="buttons">
@@ -33,10 +34,110 @@ import "../CSS/index.css";
         </div>
         <div></div>
       </header>
-      <section id="about-main">
+      <section id="projects-main" class="hidden">
+        <div id="project-top">
+          <h1>
+            Some Projects
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+              ><g data-name="Layer 2"
+                ><g data-name="arrow-forward"
+                  ><rect
+                    width="10"
+                    height="10"
+                    transform="rotate(-90 12 12)"
+                    opacity="0"></rect><path
+                    d="M5 13h11.86l-3.63 4.36a1 1 0 0 0 1.54 1.28l5-6a1.19 1.19 0 0 0 .09-.15c0-.05.05-.08.07-.13A1 1 0 0 0 20 12a1 1 0 0 0-.07-.36c0-.05-.05-.08-.07-.13a1.19 1.19 0 0 0-.09-.15l-5-6A1 1 0 0 0 14 5a1 1 0 0 0-.64.23 1 1 0 0 0-.13 1.41L16.86 11H5a1 1 0 0 0 0 2z"
+                  ></path></g
+                ></g
+              ></svg
+            >
+          </h1>
+          <a
+            href="https://github.com/aiamanme?tab=repositories"
+            target="_blank"
+            class="red text-decoration-none"
+            ><span class="red">Load more!</span></a
+          >
+        </div>
+        <div id="projects">
+          <a
+            href="https://github.com/aiamanme/chat-app"
+            class="card"
+            target="_blank"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="-11.5 -10.23174 23 20.46348"
+            >
+              <title>React Logo</title>
+              <circle cx="0" cy="0" r="2.05" fill="#61dafb"></circle>
+              <g stroke="#61dafb" stroke-width="1" fill="none">
+                <ellipse rx="11" ry="4.2"></ellipse>
+                <ellipse rx="11" ry="4.2" transform="rotate(60)"></ellipse>
+                <ellipse rx="11" ry="4.2" transform="rotate(120)"></ellipse>
+              </g>
+            </svg>
+            <div id="card-main">
+              <h2>Chat App</h2>
+              <p>
+                A Fast 🚀, Safe and Secure chat app made in React and Firebase.
+              </p>
+            </div>
+          </a>
+          <a
+            href="https://github.com/aiamanme/todo-hcj"
+            class="card"
+            target="_blank"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+              <title>HTML5 Logo Badge</title>
+              <path fill="#E34F26" d="M71,460 L30,0 481,0 440,460 255,512"
+              ></path>
+              <path fill="#EF652A" d="M256,472 L405,431 440,37 256,37"></path>
+              <path
+                fill="#EBEBEB"
+                d="M256,208 L181,208 176,150 256,150 256,94 255,94 114,94 115,109 129,265 256,265zM256,355 L255,355 192,338 188,293 158,293 132,293 139,382 255,414 256,414z"
+              ></path>
+              <path
+                fill="#FFF"
+                d="M255,208 L255,265 325,265 318,338 255,355 255,414 371,382 372,372 385,223 387,208 371,208zM255,94 L255,129 255,150 255,150 392,150 392,150 392,150 393,138 396,109 397,94z"
+              ></path>
+            </svg>
+            <div id="card-main">
+              <h2>ToDo</h2>
+              <p>
+                A Usefull and Powerful ToDo app in plane HTML CSS JavaScript.
+              </p>
+            </div>
+          </a>
+          <a
+            href="https://github.com/aiamanme/game-odd-even-c"
+            class="card"
+            target="_blank"
+          >
+            <svg viewBox="0 0 128 128">
+              <path
+                fill="#659AD3"
+                d="M115.4 30.7L67.1 2.9c-.8-.5-1.9-.7-3.1-.7-1.2 0-2.3.3-3.1.7l-48 27.9c-1.7 1-2.9 3.5-2.9 5.4v55.7c0 1.1.2 2.4 1 3.5l106.8-62c-.6-1.2-1.5-2.1-2.4-2.7z"
+              ></path><path
+                fill="#03599C"
+                d="M10.7 95.3c.5.8 1.2 1.5 1.9 1.9l48.2 27.9c.8.5 1.9.7 3.1.7 1.2 0 2.3-.3 3.1-.7l48-27.9c1.7-1 2.9-3.5 2.9-5.4V36.1c0-.9-.1-1.9-.6-2.8l-106.6 62z"
+              ></path><path
+                fill="#fff"
+                d="M85.3 76.1C81.1 83.5 73.1 88.5 64 88.5c-13.5 0-24.5-11-24.5-24.5s11-24.5 24.5-24.5c9.1 0 17.1 5 21.3 12.5l13-7.5c-6.8-11.9-19.6-20-34.3-20-21.8 0-39.5 17.7-39.5 39.5s17.7 39.5 39.5 39.5c14.6 0 27.4-8 34.2-19.8l-12.9-7.6z"
+              ></path>
+            </svg>
+            <div id="card-main">
+              <h2>Odd Even Game</h2>
+              <p>A simple and easy odd even game made in C Language</p>
+            </div>
+          </a>
+        </div>
+      </section>
+      <section id="about-main" class="hidden">
         <div id="about">
           <div id="main-pic">
-            <img src={peofilePhoto} alt="profile-pic" />
+            <Image src={peofilePhoto} alt="descriptive text" />
             <div id="box-shadow"></div>
             <div id="box-shadow2"></div>
           </div>
@@ -55,8 +156,9 @@ import "../CSS/index.css";
                 class="white">ecosystem</span
               >. After that started learning React. I'm the type who learns best
               by creating, so I started creating projects, with more in progress
-              - you can explore them on my <a href="https://github.com/aimaname" class="red text-decoration-none"
-                >GitHub repository.</a
+              - you can explore them on my <a
+                href="https://github.com/aimaname"
+                class="red text-decoration-none">GitHub repository.</a
               >
               <br /><br />
               Beyond coding, I've been immersed in the world of <span
@@ -73,137 +175,7 @@ import "../CSS/index.css";
           </div>
         </div>
       </section>
-      <section id="projects-main">
-        <div id="project-top">
-          <h1>
-            Some Projects
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-              ><g data-name="Layer 2"
-                ><g data-name="arrow-forward"
-                  ><rect
-                    width="10"
-                    height="10"
-                    transform="rotate(-90 12 12)"
-                    opacity="0"></rect><path
-                    d="M5 13h11.86l-3.63 4.36a1 1 0 0 0 1.54 1.28l5-6a1.19 1.19 0 0 0 .09-.15c0-.05.05-.08.07-.13A1 1 0 0 0 20 12a1 1 0 0 0-.07-.36c0-.05-.05-.08-.07-.13a1.19 1.19 0 0 0-.09-.15l-5-6A1 1 0 0 0 14 5a1 1 0 0 0-.64.23 1 1 0 0 0-.13 1.41L16.86 11H5a1 1 0 0 0 0 2z"
-                  ></path></g
-                ></g
-              ></svg
-            >
-          </h1>
-          <a href="https://github.com/aiamanme?tab=repositories" target="_blank" class="red text-decoration-none"
-            ><span class="red">Load more!</span></a
-          >
-        </div>
-        <div id="projects">
-          <a
-            href="https://github.com/aiamanme/chat-app"
-            id="card"
-            target="_blank"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="-11.5 -10.23174 23 20.46348"
-            >
-              <title>React Logo</title>
-              <circle cx="0" cy="0" r="2.05" fill="#61dafb"></circle>
-              <g stroke="#61dafb" stroke-width="1" fill="none">
-                <ellipse rx="11" ry="4.2"></ellipse>
-                <ellipse rx="11" ry="4.2" transform="rotate(60)"></ellipse>
-                <ellipse rx="11" ry="4.2" transform="rotate(120)"></ellipse>
-              </g>
-            </svg>
-            <div id="card-main">
-              <h5>Chat App</h5>
-              <p>
-                A Fast 🚀, Safe and Secure chat app made in React and Firebase.
-              </p>
-            </div>
-          </a>
-          <a
-            href="https://github.com/aiamanme/todo-hcj"
-            id="card"
-            target="_blank"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-              <title>HTML5 Logo Badge</title>
-              <path fill="#E34F26" d="M71,460 L30,0 481,0 440,460 255,512"
-              ></path>
-              <path fill="#EF652A" d="M256,472 L405,431 440,37 256,37"></path>
-              <path
-                fill="#EBEBEB"
-                d="M256,208 L181,208 176,150 256,150 256,94 255,94 114,94 115,109 129,265 256,265zM256,355 L255,355 192,338 188,293 158,293 132,293 139,382 255,414 256,414z"
-              ></path>
-              <path
-                fill="#FFF"
-                d="M255,208 L255,265 325,265 318,338 255,355 255,414 371,382 372,372 385,223 387,208 371,208zM255,94 L255,129 255,150 255,150 392,150 392,150 392,150 393,138 396,109 397,94z"
-              ></path>
-            </svg>
-            <div id="card-main">
-              <h5>ToDo</h5>
-              <p>
-                A Usefull and Powerful ToDo app in plane HTML CSS JavaScript.
-              </p>
-            </div>
-          </a>
-          <a
-            href="https://github.com/aiamanme/game-odd-even-c"
-            id="card"
-            target="_blank"
-          >
-            <svg
-              width="89.640671mm"
-              height="93.591774mm"
-              viewBox="0 0 89.64067 93.591774"
-              version="1.1"
-              id="svg814"
-              inkscape:export-filename="FINALanswerbookBLUE.png"
-              inkscape:export-xdpi="651.59998"
-              inkscape:export-ydpi="651.59998"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <sodipodi:namedview
-                id="namedview816"
-                pagecolor="#ffffff"
-                bordercolor="#000000"
-                borderopacity="0.25"
-                inkscape:showpageshadow="2"
-                inkscape:pageopacity="0.0"
-                inkscape:pagecheckerboard="0"
-                inkscape:deskcolor="#d1d1d1"
-                inkscape:document-units="mm"
-                showgrid="false"
-                inkscape:zoom="1.2644604"
-                inkscape:cx="107.95119"
-                inkscape:cy="167.66045"
-                inkscape:window-width="1366"
-                inkscape:window-height="705"
-                inkscape:window-x="-8"
-                inkscape:window-y="-8"
-                inkscape:window-maximized="1"
-                inkscape:current-layer="layer1"></sodipodi:namedview>
-              <defs id="defs811"></defs>
-              <g id="layer1" transform="translate(-115.31123,-96.087413)">
-                <g
-                  aria-label="C"
-                  id="text1719"
-                  style="font-weight:bold;font-size:123.472px;font-family:'Neue Haas Grotesk Text Pro';-inkscape-font-specification:'Neue Haas Grotesk Text Pro Bold';fill:#a9bacd;stroke-width:0.264583;fill-opacity:1"
-                >
-                  <path
-                    d="m 204.33454,132.38818 c -2.34597,-22.84232 -17.53303,-36.300767 -44.69687,-36.300767 -24.81787,0 -44.32644,17.903437 -44.32644,46.672417 0,28.89245 17.77996,46.91936 47.1663,46.91936 23.45968,0 39.88146,-13.82886 42.47437,-36.79466 h -28.02815 c -1.11124,8.51957 -5.55624,15.06359 -14.94011,15.06359 -14.81664,0 -17.53302,-11.72984 -17.53302,-24.20051 0,-17.16261 6.1736,-25.92912 16.42177,-25.92912 9.13693,0 14.94012,5.30929 15.80442,14.56969 z"
-                    style="font-weight:900;font-family:'Helvetica LT Std';-inkscape-font-specification:'Helvetica LT Std Heavy';fill:#a9bacd;fill-opacity:1"
-                    id="path1771"></path>
-                </g>
-              </g>
-            </svg>
-            <div id="card-main">
-              <h5>Odd Even Game</h5>
-              <p>A simple and easy odd even game made in C Language</p>
-            </div>
-          </a>
-        </div>
-      </section>
-      <section id="skills-main">
+      <section id="skills-main" class="hidden">
         <h2>Tools that i like!</h2>
         <div id="skills">
           <svg
@@ -399,10 +371,33 @@ import "../CSS/index.css";
             ></path>
           </svg>
           <svg viewBox="0 0 128 128">
-            <path fill="#659AD3" d="M115.4 30.7L67.1 2.9c-.8-.5-1.9-.7-3.1-.7-1.2 0-2.3.3-3.1.7l-48 27.9c-1.7 1-2.9 3.5-2.9 5.4v55.7c0 1.1.2 2.4 1 3.5l106.8-62c-.6-1.2-1.5-2.1-2.4-2.7z"></path><path fill="#03599C" d="M10.7 95.3c.5.8 1.2 1.5 1.9 1.9l48.2 27.9c.8.5 1.9.7 3.1.7 1.2 0 2.3-.3 3.1-.7l48-27.9c1.7-1 2.9-3.5 2.9-5.4V36.1c0-.9-.1-1.9-.6-2.8l-106.6 62z"></path><path fill="#fff" d="M85.3 76.1C81.1 83.5 73.1 88.5 64 88.5c-13.5 0-24.5-11-24.5-24.5s11-24.5 24.5-24.5c9.1 0 17.1 5 21.3 12.5l13-7.5c-6.8-11.9-19.6-20-34.3-20-21.8 0-39.5 17.7-39.5 39.5s17.7 39.5 39.5 39.5c14.6 0 27.4-8 34.2-19.8l-12.9-7.6z"></path>
-            </svg>        
+            <path
+              fill="#659AD3"
+              d="M115.4 30.7L67.1 2.9c-.8-.5-1.9-.7-3.1-.7-1.2 0-2.3.3-3.1.7l-48 27.9c-1.7 1-2.9 3.5-2.9 5.4v55.7c0 1.1.2 2.4 1 3.5l106.8-62c-.6-1.2-1.5-2.1-2.4-2.7z"
+            ></path><path
+              fill="#03599C"
+              d="M10.7 95.3c.5.8 1.2 1.5 1.9 1.9l48.2 27.9c.8.5 1.9.7 3.1.7 1.2 0 2.3-.3 3.1-.7l48-27.9c1.7-1 2.9-3.5 2.9-5.4V36.1c0-.9-.1-1.9-.6-2.8l-106.6 62z"
+            ></path><path
+              fill="#fff"
+              d="M85.3 76.1C81.1 83.5 73.1 88.5 64 88.5c-13.5 0-24.5-11-24.5-24.5s11-24.5 24.5-24.5c9.1 0 17.1 5 21.3 12.5l13-7.5c-6.8-11.9-19.6-20-34.3-20-21.8 0-39.5 17.7-39.5 39.5s17.7 39.5 39.5 39.5c14.6 0 27.4-8 34.2-19.8l-12.9-7.6z"
+            ></path>
+          </svg>
         </div>
       </section>
     </MainLayout>
   </body>
 </html>
+
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      console.log(entry);
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+      }
+    })
+  })
+
+  const hiddenElements = document.querySelectorAll('.hidden');
+  hiddenElements.forEach((el) => observer.observe(el));
+</script>
