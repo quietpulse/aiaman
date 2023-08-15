@@ -78,7 +78,9 @@ header button:hover {
 }
 
 #projects {
+    margin-top: 60px;
     display: grid;
+    grid-auto-flow: column;
     grid-template-columns: auto;
     gap: 20px;
 }
@@ -209,7 +211,8 @@ header button:hover {
 /* Media Queries */
 @media screen and (max-width: 800px) {
     #about, #projects {
-        display: flex;
+        display: grid;
+        grid-auto-flow: row;
         justify-content: center;
     }
 
@@ -218,13 +221,13 @@ header button:hover {
     }
 
     #box-shadow {
-        padding: 140px;
+        padding: 1px 140px;
     }
 
     #box-shadow2 {
         margin-right: 0;
         margin-bottom: 200px;
-        padding: 100px;
+        padding: 0px;
     }
 
     #about img:hover {
@@ -232,7 +235,7 @@ header button:hover {
     }
 
     header {
-        margin: 130px 0;
+        margin: 80px 0;
     }
 
     header h1 {
@@ -246,7 +249,7 @@ header button:hover {
     }
 
     #about-main {
-        margin: 40px;
+        margin: 0px;
     }
 
     #card {
@@ -254,6 +257,7 @@ header button:hover {
     }
 
     #skills svg {
-        height: 60px;
+        margin: 30px;
+        height: 45px;
     }
 }
