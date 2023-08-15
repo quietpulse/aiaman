@@ -6,11 +6,26 @@ Inside of aiaman project, you'll see the following folders and files:
 
 ```
 /
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
+./
+├── astro.config.mjs
+├── public
+│   └── favicon.svg
+├── README.md
+├── src
+│   ├── components
+│   │   └── dummy.html
+│   ├── CSS
+│   │   ├── index.css
+│   │   └── mainLayout.css
+│   ├── env.d.ts
+│   ├── images
+│   │   └── profile-pic.png
+│   ├── layout
+│   │   └── mainLayout.astro
+│   └── pages
+│       └── index.astro
+└── tsconfig.json
+
 ```
 
 Used thing in this project 📜 :
