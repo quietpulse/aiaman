@@ -6,7 +6,6 @@ Inside of aiaman project, you'll see the following folders and files:
 
 ```
 /
-./
 ├── astro.config.mjs
 ├── public
 │   └── favicon.svg
