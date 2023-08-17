@@ -1,7 +1,7 @@
 ---
 import MainLayout from "../layout/mainLayout.astro";
 import peofilePhoto from "../images/profile-pic.png";
-import { Image, Picture } from '@astrojs/image/components';
+import { Image, Picture } from "@astrojs/image/components";
 import "../CSS/index.css";
 ---
 
@@ -9,7 +9,10 @@ import "../CSS/index.css";
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="I'm Aiaman and i'm self-taught 14-year-old web developer with some impressive skills.">
+    <meta
+      name="description"
+      content="I'm Aiaman and i'm self-taught 14-year-old web developer with some impressive skills."
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>aiaman</title>
   </head>
@@ -23,7 +26,7 @@ import "../CSS/index.css";
             </h1>
             <p>
               I'm a self-taught 14-year-old web developer with some <span
-              class="white">impressive</span
+                class="white">impressive</span
               > skills.
             </p>
           </div>
@@ -35,7 +38,7 @@ import "../CSS/index.css";
         <div></div>
       </header>
       <section id="projects-main" class="hidden">
-        <div id="project-top">
+        <div id="project-top" class="hidden">
           <h1>
             Some Projects
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
@@ -64,6 +67,7 @@ import "../CSS/index.css";
             href="https://github.com/aiamanme/chat-app"
             class="card"
             target="_blank"
+            class="hidden"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -88,6 +92,7 @@ import "../CSS/index.css";
             href="https://github.com/aiamanme/todo-hcj"
             class="card"
             target="_blank"
+            class="hidden"
           >
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
               <title>HTML5 Logo Badge</title>
@@ -114,6 +119,7 @@ import "../CSS/index.css";
             href="https://github.com/aiamanme/game-odd-even-c"
             class="card"
             target="_blank"
+            class="hidden"
           >
             <svg viewBox="0 0 128 128">
               <path
@@ -384,6 +390,37 @@ import "../CSS/index.css";
           </svg>
         </div>
       </section>
+      <section id="contact-main">
+        <h3>Contact Form</h3>
+        <div class="container">
+          <form action="/action_page.php">
+            <label for="fname">Your name</label>
+            <input
+              type="text"
+              id="fname"
+              name="firstname"
+              placeholder="Your name.."
+            />
+
+            <label for="lname">Your Email</label>
+            <input
+              type="text"
+              id="lname"
+              name="lastname"
+              placeholder="exampal@xyz.com"
+            />
+
+            <label for="subject">Subject</label>
+            <textarea
+              id="subject"
+              name="subject"
+              placeholder="Write your massage hear!"
+              style="height:200px"></textarea>
+
+            <input type="submit" value="Submit" />
+          </form>
+        </div>
+      </section>
     </MainLayout>
   </body>
 </html>
@@ -393,11 +430,11 @@ import "../CSS/index.css";
     entries.forEach((entry) => {
       console.log(entry);
       if (entry.isIntersecting) {
-        entry.target.classList.add('show');
+        entry.target.classList.add("show");
       }
-    })
-  })
+    });
+  });
 
-  const hiddenElements = document.querySelectorAll('.hidden');
+  const hiddenElements = document.querySelectorAll(".hidden");
   hiddenElements.forEach((el) => observer.observe(el));
 </script>

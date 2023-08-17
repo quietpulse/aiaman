@@ -76,7 +76,7 @@ header button:hover {
 
 /* Projects Section Styles */
 #projects-main {
-    margin: 100px 20px;
+    padding: 80px 5px;
 }
 
 #project-top {
@@ -92,7 +92,7 @@ header button:hover {
 }
 
 #projects {
-    margin-top: 60px;
+    margin-top: 32px;
     display: grid;
     grid-auto-flow: column;
     grid-template-columns: auto;
@@ -135,8 +135,7 @@ header button:hover {
 
 /* About Section Styles */
 #about {
-    margin: 50px;
-    padding-top: 40px;
+    padding: 50px 70px 0px 70px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -197,7 +196,7 @@ header button:hover {
 
 /* Skills Section Styles */
 #skills-main {
-    margin-top: 100px;
+    margin-top: 130px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -205,7 +204,7 @@ header button:hover {
 
 #skills-main h2 {
     text-align: center;
-    font-size: 35px;
+    font-size: 40px;
 }
 
 #skills {
@@ -222,15 +221,64 @@ header button:hover {
     width: auto;
 }
 
+#contact-main {
+    margin: 80px 190px;
+}
+
+#contact-main h3 {
+    font-size: 40px;
+    text-align: center;
+}
+
+#contact-main input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 15px;
+    border: 3px solid #d6f4ff;
+    background-color: #25242b;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 12px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+#contact-main input[type=submit] {
+    background-color: #002533;
+    border: 3px solid #0092cc;
+    font-weight: 700;
+    font-size: 14px;
+    border-radius: 100px;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#contact-main input[type=submit]:hover {
+    background-color: #3f0863;
+}
+
+.container {
+    border-radius: 20px;
+    background-color: transparent;
+}
+
 /* Media Queries */
 @media screen and (max-width: 800px) {
-    #about, #projects {
+    #about,
+    #projects {
         display: grid;
         grid-auto-flow: row;
         justify-content: center;
     }
 
-    #about img, #box-shadow, #box-shadow2 {
+    #about img,
+    #box-shadow,
+    #box-shadow2 {
         height: 280px;
     }
 
@@ -248,6 +296,10 @@ header button:hover {
         height: 300px;
     }
 
+    #about {
+        padding: 40px;
+    }
+
     header {
         margin: 120px 0;
     }
@@ -263,12 +315,7 @@ header button:hover {
     }
 
     #about-main {
-        margin: 0px;
-    }
-
-    #about{
-        margin-right: 35px;
-        margin-left: 35px;
+        margin-top: 50px;
     }
 
     #main-pic {
@@ -278,9 +325,7 @@ header button:hover {
     }
 
     #projects-main {
-        margin-top: 150px;
-        margin-left: 0px;
-        margin-right: 0px;
+        margin: 0px;
     }
 
     .card {
@@ -288,11 +333,19 @@ header button:hover {
     }
 
     #skills svg {
-        margin: 30px;
-        height: 45px;
+        margin: 50px;
+        height: 60px;
     }
 
     #skills {
-        margin-bottom: 100px;
+        margin-bottom: 0px;
+    }
+
+    #skills-main {
+        margin-top: 40px;
+    }
+
+    #contact-main {
+        margin: 120px 40px;
     }
 }
