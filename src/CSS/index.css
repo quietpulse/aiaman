@@ -59,15 +59,15 @@ header button {
     font-weight: 600;
     cursor: pointer;
     border-radius: 100px;
-    padding: 8px 18px;
+    padding: 10px 20px;
     color: #fff;
-    border: 2px solid #ccc;
+    border: none;
     background-color: #353535;
-    transition: all 0.4s;
+    transition: all 0.2s;
 }
 
 header button:hover {
-    border: 2px solid #353535;
+    background-color: rgb(51, 37, 65);
 }
 
 #buttons {
@@ -301,7 +301,7 @@ textarea {
     }
 
     header {
-        margin: 120px 0;
+        margin: 100px 0;
     }
 
     header h1 {
