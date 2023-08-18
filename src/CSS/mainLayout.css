@@ -4,6 +4,10 @@
     font-family: 'Ysabeau Infant', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     color: #fff;

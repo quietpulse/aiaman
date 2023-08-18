@@ -33,7 +33,7 @@
 
 /* Header Styles */
 header {
-    margin: 70px 120px;
+    margin: 50px 120px;
     font-size: 20px;
     display: flex;
     align-items: center;
@@ -63,11 +63,16 @@ header button {
     color: #fff;
     border: none;
     background-color: #353535;
-    transition: all 0.2s;
+    transition: all 0.3s;
+}
+
+header button a {
+    text-decoration: none;
+    color: #fff;
 }
 
 header button:hover {
-    background-color: rgb(51, 37, 65);
+    background-color: #3575ce;
 }
 
 #buttons {
@@ -119,7 +124,7 @@ header button:hover {
 .card h2 {
     font-size: 20px;
     color: #fff;
-    margin-top: 5px;
+    margin-top: 12px;
 }
 
 .card svg {
@@ -192,11 +197,10 @@ header button:hover {
     line-height: 48px;
 }
 
-
-
 /* Skills Section Styles */
 #skills-main {
-    margin-top: 130px;
+    padding-top: 80px;
+    margin-top: 50px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -222,11 +226,12 @@ header button:hover {
 }
 
 #contact-main {
-    margin: 80px 190px;
+    padding: 80px 190px;
 }
 
 #contact-main h3 {
     font-size: 40px;
+    margin: 50px;
     text-align: center;
 }
 
@@ -269,6 +274,7 @@ textarea {
 
 /* Media Queries */
 @media screen and (max-width: 800px) {
+
     #about,
     #projects {
         display: grid;
