@@ -352,6 +352,7 @@ textarea {
     }
 
     #contact-main {
-        margin: 120px 40px;
+        margin: 80px 40px;
+        padding: 0;
     }
 }
