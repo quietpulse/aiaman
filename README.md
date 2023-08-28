@@ -30,7 +30,7 @@ Inside of aiaman project, you'll see the following folders and files:
 Used thing in this project 📜 :
 - [Astro](https://astro.build/) - Build the web you want.
 
-**I am gona add more in future**
+**I am gona add more in 'future'**
 
 ---
 
