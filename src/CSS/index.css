@@ -2,7 +2,7 @@
 .hidden {
     opacity: 0;
     filter: blur(10px);
-    transform: translateX(-20px);
+    transform: translateY(20px);
     transition: all 0.5s;
 }
 
@@ -210,6 +210,7 @@ header button:hover {
 #skills-main h2 {
     text-align: center;
     font-size: 40px;
+    margin: 0 40px;
 }
 
 #skills {

@@ -117,6 +117,7 @@ footer p {
     font-weight: 600;
     transition: all 0.3s;
     color: #ff5d5d;
+    text-decoration: none   ;
 }
 
 #my-link:hover {
