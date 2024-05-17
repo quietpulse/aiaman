@@ -30,7 +30,6 @@ nav {
     align-items: center;
     justify-content: space-between;
     background-color: #1e1c20ce;
-    backdrop-filter: blur(10px);
     z-index: 99;
 }
 
@@ -127,6 +126,13 @@ footer p {
 footer svg {
     height: 14px;
     width: auto;
+}
+
+#end-line {
+    background: rgb(255,93,93);
+    background: linear-gradient(121deg, rgba(255,93,93,1) 35%, rgba(53,117,206,1) 100%);
+    width: 100vw;
+    height: 6px;
 }
 
 @media screen and (max-width: 800px) {

@@ -115,7 +115,6 @@ header button:hover {
 }
 
 .card p {
-    max-width: 250px;
     font-size: 15px;
     line-height: 20px;
     color: #d4d4d4;
@@ -201,27 +200,33 @@ header button:hover {
 #skills-main {
     padding-top: 80px;
     margin-top: 50px;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
+    display:  flex;
+    flex-flow: column;
     justify-content: center;
+    align-items: center;
 }
 
 #skills-main h2 {
     text-align: center;
     font-size: 40px;
-    margin: 0 40px;
+    margin: 60px 40px;
 }
 
 #skills {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    max-width: 1200px;
+    gap: 100px;
+    max-width: 980px;
+}
+
+#tools-link {
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
 }
 
 #skills svg {
-    margin: 50px;
     border-radius: 8px;
     height: 70px;
     width: auto;
@@ -266,7 +271,7 @@ textarea {
 }
 
 #contact-main input[type=submit]:hover {
-    background-color: #3f0863;
+    background-color: #0092cc;
 }
 
 .container {
@@ -346,11 +351,11 @@ textarea {
     }
 
     #skills {
-        margin-bottom: 0px;
+        gap: 0px;
     }
 
     #skills-main {
-        margin-top: 40px;
+        margin-top: 0px;
     }
 
     #contact-main {
