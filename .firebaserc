@@ -1,0 +1,16 @@
+{
+  "projects": {
+    "default": "aiaman-ee727"
+  },
+  "targets": {
+    "aiaman-ee727": {
+      "hosting": {
+        "aiaman": [
+          "aiaman"
+        ]
+      }
+    }
+  },
+  "etags": {},
+  "dataconnectEmulatorConfig": {}
+}
