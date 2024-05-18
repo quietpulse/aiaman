@@ -30,6 +30,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     background-color: #1e1c20ce;
+    backdrop-filter: blur(15px);
     z-index: 99;
 }
 
