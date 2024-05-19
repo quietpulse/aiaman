@@ -1,4 +1,11 @@
-# aiaman a protofilo ✨
+# aiAman - Computer Science Enthusiast, Linuxer, Deep Learning Aficionado ✨
+
+## Overview (media)
+
+### Home page :
+<![Home page of site](/media/main.png)>
+<video src="/media/main.mp4" width="320" height="240" controls></video>
+
 
 ## 🚀 Project Structure
 
@@ -9,6 +16,9 @@ Inside of aiaman project, you'll see the following folders and files:
 ├── astro.config.mjs
 ├── public
 │   └── favicon.svg
+├── media
+|   ├── main.png
+|   └── main.mp4
 ├── README.md
 ├── src
 │   ├── components
@@ -23,12 +33,18 @@ Inside of aiaman project, you'll see the following folders and files:
 │   │   └── mainLayout.astro
 │   └── pages
 │       └── index.astro
-└── tsconfig.json
-
+├── tsconfig.json
+├── astro.config.mjs
+├── firebase.json
+└── package.json
 ```
 
 Used thing in this project 📜 :
 - [Astro](https://astro.build/) - Build the web you want.
+- [Get Emoji](https://getemoji.com/) - ✂️ Copy and 📋 Paste Emoji 👍 No apps required
+- [Ysabeau Infant](https://fonts.google.com/specimen/Ysabeau+Infant/) - The essence of Garamond in an open-source sans-serif typeface
+- [Wikimedia](https://commons.wikimedia.org/) - For svgs of every image on site. 🙂
+- [BotFather](https://telegram.me/BotFather) - For contact.
 
 **I am gona add more in 'future'**
 
@@ -48,4 +64,4 @@ Then just make you changes ✍️ and create pull request!
 
 ---
 
-Made with ❤️& ✨ by [@aiamanme](https://github.com/aiamanme)
+Made with ❤️& ✨ by [@quietpulse](https://github.com/quietpulse)

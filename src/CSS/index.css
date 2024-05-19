@@ -53,7 +53,7 @@ header h1 {
     color: #d6d6d6;
 }
 
-header button {
+header a {
     font-size: 13px;
     margin-right: 13px;
     font-weight: 600;
@@ -66,12 +66,12 @@ header button {
     transition: all 0.3s;
 }
 
-header button a {
+header a {
     text-decoration: none;
     color: #fff;
 }
 
-header button:hover {
+header a:hover {
     background-color: #3575ce;
 }
 
@@ -120,7 +120,7 @@ header button:hover {
     color: #d4d4d4;
 }
 
-.card h2 {
+.card h3 {
     font-size: 20px;
     color: #fff;
     margin-top: 12px;
@@ -236,7 +236,7 @@ header button:hover {
     padding: 80px 190px;
 }
 
-#contact-main h3 {
+#contact-main h2 {
     font-size: 40px;
     margin: 50px;
     text-align: center;

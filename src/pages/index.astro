@@ -1,7 +1,7 @@
 ---
 import MainLayout from "../layout/mainLayout.astro";
 import peofilePhoto from "../images/profile-pic.png";
-import { Image } from "@astrojs/image/components";
+import { Image } from '@astrojs/image/components';
 import "../CSS/index.css";
 ---
 
@@ -9,17 +9,28 @@ import "../CSS/index.css";
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="description"
-      content="I'm Aiaman and i'm self-taught 14-year-old web developer with some impressive skills."
-    />
     <link
       rel="shortcut icon"
       href="../../public/favicon.ico"
       type="image/x-icon"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>aiaman ~ quietpulse</title>
+    <title>aiAman - Computer Science Enthusiast, Linux Expert, Deep Learning Aficionado</title>
+    <meta name="description" content="Hi, I'm Aiaman. I'm a passionate programmer with a keen interest in Linux, coding, and continuous learning. I specialize in creating efficient and innovative solutions in the tech space.">
+        <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://aiaman.web.app/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="aiAman - Computer Science Enthusiast, Linux Expert, Deep Learning Aficionado">
+    <meta property="og:description" content="Hi, I'm Aiaman. I'm a passionate programmer with a keen interest in Linux, coding, and continuous learning. I specialize in creating efficient and innovative solutions in the tech space.">
+    <meta property="og:image" content="https://www.imghippo.com/i/W6w791716096519.png">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="aiaman">
+    <meta property="twitter:domain" content="aiaman.web.app">
+    <meta property="twitter:url" content="https://aiaman.web.app/">
+    <meta name="twitter:title" content="aiAman - Computer Science Enthusiast, Linux Expert, Deep Learning Aficionado">
+    <meta name="twitter:description" content="Hi, I'm Aiaman. I'm a passionate programmer with a keen interest in Linux, coding, and continuous learning. I specialize in creating efficient and innovative solutions in the tech space.">
+    <meta name="twitter:image" content="https://www.imghippo.com/i/W6w791716096519.png">
   </head>
   <body>
     <MainLayout>
@@ -35,15 +46,15 @@ import "../CSS/index.css";
             </p>
           </div>
           <div id="buttons" class="hidden">
-            <button><a href="#contact-main">Get in touch!</a></button>
-            <button><a href="#about-main">About me</a></button>
+            <a href="#contact-main">Get in touch!</a>
+            <a href="#about-main">About me</a>
           </div>
         </div>
         <div></div>
       </header>
       <section id="projects-main">
         <div id="project-top" class="hidden">
-          <h1>
+          <h2>
             Some Projects
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
               ><g data-name="Layer 2"
@@ -58,7 +69,7 @@ import "../CSS/index.css";
                 ></g
               ></svg
             >
-          </h1>
+          </h2>
           <a
             href="https://github.com/quietpulse?tab=repositories"
             target="_blank"
@@ -126,7 +137,7 @@ import "../CSS/index.css";
               </g>
             </svg>
             <div id="card-main" class="hidden">
-              <h2>Tic Tac Toe</h2>
+              <h3>Tic Tac Toe</h3>
               <p>
                 C++ CLI based Tic-Tac-Toe application with full functionality.
               </p>
@@ -153,7 +164,7 @@ import "../CSS/index.css";
               ></path>
             </svg>
             <div id="card-main" class="hidden">
-              <h2>ToDo</h2>
+              <h3>ToDo</h3>
               <p>
                 A Usefull and Powerful ToDo app in vanilla HTML CSS JavaScript.
               </p>
@@ -178,7 +189,7 @@ import "../CSS/index.css";
               ></path>
             </svg>
             <div id="card-main" class="hidden">
-              <h2>Number Guessing Game</h2>
+              <h3>Number Guessing Game</h3>
               <p>A simple and easy Number Guessing Game 🎮 made in C Language</p>
             </div>
           </a>
@@ -187,7 +198,15 @@ import "../CSS/index.css";
       <section id="about-main">
         <div id="about">
           <div id="main-pic" class="hidden">
-            <Image src={peofilePhoto} alt="aman profile pic"/>
+            <Image
+            src={peofilePhoto}
+            alt="aiaman or quietpulse's profile photo; pfp."
+            height={480}
+            width={480}
+            sizes="(max-width: 480px) 480px,"
+            format="webp"
+            alt="aiaman or quietpulse's profile photo; pfp."
+          />
             <div id="box-shadow"></div>
             <div id="box-shadow2"></div>
           </div>
@@ -377,7 +396,7 @@ import "../CSS/index.css";
         </div>
       </section>
       <section id="contact-main">
-        <h3 class="hidden">Contact Form 📌</h3>
+        <h2 class="hidden">Contact Form 📌</h2>
         <div class="container">
           <label for="fname" class="hidden">Subjact</label>
           <input
