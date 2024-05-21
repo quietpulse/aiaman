@@ -3,8 +3,10 @@
 ## Overview (media)
 
 ### Home page :
-<![Home page of site](/media/main.png)>
-<video src="/media/main.mp4" width="320" height="240" controls></video>
+  <p align="center">
+  <img src="/media/main.png"></img>
+  <video src="/media/main.mp4" width="320" height="240" controls></video>
+  </p>
 
 
 ## 🚀 Project Structure
